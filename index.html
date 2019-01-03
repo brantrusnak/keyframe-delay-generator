@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Keyframe Delay Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="input_form">
+    <form onsubmit="handleSubmit(event)">
+
+      <label for="animName">Animation Name</label>
+      <input name="animName" type="text" value="animationName" required>
+
+      <label for="animTime">Animation Time (seconds)</label>
+      <input name="animTime" type="number" min="1" value="1" />
+  
+      <label for="animDelay">Animation Delay (seconds)</label>
+      <input name="animDelay" type="number" min="1" value="2" />
+  
+      <label for="totalStates" alt="Hey there">Animation States</label>
+      <input name="totalStates" type="number" min="1" value="4" />
+
+      <button type="submit">Generate</button>
+
+    </form>
+  </div>
+
+  <pre id="code" contenteditable="true" spellcheck="false" ></pre>
+
+  <script src="index.js"></script>
+</body>
+</html>
